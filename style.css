@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 500px;
+    width: 502px;
+    background-color: #fff;
+    margin: auto;
+}
+
+div{
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
