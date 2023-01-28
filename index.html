@@ -1,17 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etch-A-Sketch</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <label for="size">Points (between 0 and 10):</label>
-    <input type="range" id="size" name="size" min="1" max="100" step="1">
-
-    <div class="container"></div>
-    <script src="app.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Etch-A-Sketch</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Etch-A-Sketch</h1>
+        <div class="flex-container">
+            <div class="sidebar">
+                <div>
+                    <label>Grid Size: <span class="rangeValue">0 X 0</span></label><br>
+                    <input type="range" id="size" name="size" min="1" max="50" value="20">
+                </div>
+                
+                <div>
+                    <input type="color" id="colour" value="#000000">
+                    <label for="colour">colour</label>
+                </div>
+                
+                <div>
+                    <input type="color" id="backgroundColour" value="#ffffff">
+                    <label for="backgroundColour">background Colour</label>
+                </div>
+    
+                <button id="rainbow" class="button">
+                    Rainbow
+                </button>
+                <button id="clearAll" class="button">
+                    Clear All
+                </button>
+                <button id="gridlines" class="button">
+                    Hide Gridlines
+                </button>
+            </div>
+            
+            <div class="main">
+                <div class="container"></div>
+            </div>
+        </div>
+        
+        <script src="app.js"></script>
+    </body>
 </html>
