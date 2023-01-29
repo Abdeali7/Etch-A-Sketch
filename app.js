@@ -87,8 +87,6 @@ rainbow.onclick = function() {
     }
     toggle = false;
   } else {
-    // If toggle is false, loop through each box and change its color to #000 (black)
-    color = '#000';
     for (box of boxes) {
       changeColor(box, color);
     }
